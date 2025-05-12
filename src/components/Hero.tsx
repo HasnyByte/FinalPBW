@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 const Hero = () => {
     return (
@@ -8,13 +9,19 @@ const Hero = () => {
                     Past Treasures, Present Charm
                 </h1>
 
-                <p>
+                <p className="text-[#495057] mt-4">
                     Discover curated preloved pieces where the charm of the past meets today’s lifestyle.
                 </p>
 
                 <a href="#product">
-                    <button>Shop the Collection</button>
+                    <button className="mt-8 bg-black text-white px-3 py-2 rounded-xl">
+                        Shop the Collection
+                    </button>
                 </a>
+            </div>
+
+            <div>
+                <Image src="/klipartz.png" width={600} height={600} alt="baju" />
             </div>
         </div>
     )
