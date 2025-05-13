@@ -4,7 +4,7 @@ const Header = () => {
     return (
         <nav className="px-4 md:px-12 py-4 md:py-6 bg-black text-white">
             <div className="flex justify-between items-center">
-                <a href="#" className="hidden md:inline-block text-lg font-semibold">SisaHarta</a>
+                <a href="#" className="hidden md:inline-block text-lg font-semibold">ShowROOM</a>
                 <div className="relative max-w-[300px] md:w-[400px]">
 
                     <div className="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
