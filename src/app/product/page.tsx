@@ -24,7 +24,7 @@ const ProductPage = () => {
   const [product, setProduct] = useState<Product>();
 
   const handleDelete = async () => {
-    const response = await axios.delete(`/api/product/${params.productId}`);
+    const response = await axios.delete(`/api/deleteProduct/${params.productId}`);
 
     toast.success(response.data.message);
     router.push("/");
@@ -32,7 +32,7 @@ const ProductPage = () => {
 
   useEffect(() => {
     axios
-      .get(`/api/product/${params.productId}`)
+      .get(`/api/getProduct/${params.productId}`)
       .then((response) => setProduct(response.data.product));
   }, []);
 
