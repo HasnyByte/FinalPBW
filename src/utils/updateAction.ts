@@ -1,9 +1,9 @@
 "use server";
 
-//todo: kalau udah buat product dan api baru uncomment import di bawah ini
+
 import cloudinary from "./cloudinary";
-// import Product from "@/app/api/models/product.model";
-// import { connectDB } from "@/app/api/db/connectDB";
+import { connectDB } from '@/../lib/mongoose';
+import Product from "@/app/api/models/product.model";
 
 export async function updateAction(formData: FormData, id: string) {
     try {

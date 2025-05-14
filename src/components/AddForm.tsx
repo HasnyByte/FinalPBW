@@ -22,7 +22,7 @@ const AddForm = () => {
 
             router.push("/")
 
-            setImageURL("")
+            setImageURL("");
         }
     }
 
@@ -32,7 +32,7 @@ const AddForm = () => {
         if (file) {
             const fileSize = file.size;
 
-            if (Math.round(fileSize / 1024) <= 1024) {
+            if (Math.round(fileSize / 1024) > 1024) {
                 toast.success("File is not allowed to be larger than 1MB");
             }
             else {

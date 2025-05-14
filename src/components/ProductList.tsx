@@ -17,7 +17,7 @@ const ProductList = () => {
 
         //Todo jangan lupa buat /api/fetch-products
     useEffect(() => {
-        axios.get("/api/fetch-products").then((res) => setProducts(res.data.products));
+        axios.get("/api/fetchProducts").then((res) => setProducts(res.data.products));
     }, []);
 
     return (

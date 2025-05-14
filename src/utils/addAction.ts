@@ -1,9 +1,9 @@
 "use server" ;
 
-//todo: kalau udah buat product dan api baru uncomment import di bawah ini
-import cloudinary from "@/utils/cloudinary";
-// import Product from "@/app/api/models/Product";
-// import connectDB from "@/app/api/db/connectDB";
+// import cloudinary from "@/utils/cloudinary";
+import { connectDB } from '@/../lib/mongoose';
+import Product from "@/app/api/models/product.model";
+import cloudinary from "./cloudinary";
 
 export async function addAction(formData: FormData) {
     try {
@@ -60,7 +60,6 @@ export async function addAction(formData: FormData) {
         }
     }
     catch (error) {
-
         return {
             error: "Something went wrong."
         }

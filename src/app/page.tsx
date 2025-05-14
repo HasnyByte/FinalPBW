@@ -1,4 +1,3 @@
-import AddForm from "@/components/AddForm";
 import Hero from "@/components/Hero";
 import ProductList from "@/components/ProductList";
 
