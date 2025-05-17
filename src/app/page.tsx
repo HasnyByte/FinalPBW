@@ -9,7 +9,6 @@ export default function Home() {
             <h2 className="w-full text-center text-2xl md:text-4xl font-semibold py-6 text-black">
                 All Products
             </h2>
-
             <ProductList />
         </div>
     );

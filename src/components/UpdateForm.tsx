@@ -65,7 +65,7 @@ const UpdateForm = ({ productId }: { productId: string }) => {
     return (
         <form
             action={clientAddAction}
-            className="w-full max-w-xl mx-auto flex flex-col justify-center items-center space-y-4 mt-3 md:mt-5"
+            className="w-full max-w-xl mx-auto flex flex-col justify-center items-center space-y-4 mt-3 md:mt-5 text-black"
         >
             {imageURL && (
                 <Image

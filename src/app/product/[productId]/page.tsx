@@ -39,7 +39,7 @@ const ProductPage = () => {
   }, []);
 
   if (!product) {
-    return <p>Loading...</p>;
+    return <p className="text-center">Loading...</p>;
   }
 
   return (
