@@ -43,7 +43,7 @@ const ProductPage = () => {
   }
 
   return (
-    <div className="px-4 md:px-12 bg-[#F8F9FA]">
+    <div className="px-4 md:px-12 bg-[#F8F9FA] text-black">
       <p className="cursor-pointer py-3" onClick={() => router.back()}>
         &larr; Back
       </p>
