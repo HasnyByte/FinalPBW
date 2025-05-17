@@ -15,9 +15,8 @@ interface Product {
 const ProductList = () => {
         const [products, setProducts] = useState([]);
 
-        //Todo jangan lupa buat /api/fetch-products
     useEffect(() => {
-        axios.get("/api/fetchProducts").then((res) => setProducts(res.data.products));
+        axios.get("/api/fecthProduct").then((res) => setProducts(res.data.products));
     }, []);
 
     return (
@@ -28,10 +27,12 @@ const ProductList = () => {
                 {products.map((product: Product, index) => (
                     <Link href={`/product/${product._id}`} key={index}>
                         <Image src={product.image} width={1000} height={1000} alt="mobil" className="max-w-[17rem] h-72 object-cover object-center rounded-xl"/>
+
                         <div className="mt-4">
                             <h2 className="font-semibold text-lg">{product.name}</h2>
                             <p className="font-medium text-sm mt-1">${product.price}</p>
                         </div>
+
                     </Link>
                 ))}
             </div>
