@@ -1,8 +1,9 @@
-Maulizar 2308107010003
-Reza Rahmadana 2308107010019
-Shahira Fatiya 2308107010025
-Muhammad Hanif 2308107010043
-Ikram Al Ghifari 230817010071
+# Anggota Kelompok
+- Maulizar 2308107010003
+- Reza Rahmadana 2308107010019
+- Shahira Fatiya 2308107010025
+- Muhammad Hanif 2308107010043
+- Ikram Al Ghifari 230817010071
 
 # SisaHarta
 
